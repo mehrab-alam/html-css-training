@@ -8,81 +8,65 @@
     <title>Document</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
+
             max-width: 1200px;
             margin: 0 auto;
-            background-color: hsl(220deg 43% 99%);
+            background-color: #EEE;
+            font-family: sans-serif;
+            font-weight: normal;
 
         }
 
-        #pricing {
-            margin: 40px;
-            background-color: hsl(220deg 43% 99%);
-
+        section {
+            margin-top: 40px;
         }
 
-        #upper {
-
+        #pricing-title {
             text-align: center;
-
-
-
         }
 
-        #upper h1 {
+        #pricing-title h1 {
             font-weight: bold;
             font-size: 3rem;
 
         }
 
-        #upper p {
-            margin: 0px 400px;
-            font-weight: bold;
-            color: hsl(208deg 7% 65%);
+        #pricing-title p {
+            margin-top: 20px;
+            color: #979797;
             font-size: 1.2rem;
-            width: 450px;
-
-
-
         }
 
-        #lower {
-
+        #pricing-options {
             margin: 80px 0px;
             display: flex;
             align-items: center;
-
         }
 
-        .lower-side {
-            font-weight: bold;
-            color: hsl(208deg 7% 65%);
-
+        .pricing-option {
+            color: #afafaf;
             border: 0px solid;
             padding: 10px 20px;
             font-size: 1rem;
-            border: 1px solid hsl(0, 5%, 83%);
-
-            width: 50%;
-            height: 370px;
-            background-color: hsl(0deg 0% 100%);
-
+            border: 1px solid #e0e4ea;
+            width: 300px;
+            background-color: #FFF;
         }
 
-        .left {
-            border-bottom-left-radius: 15px;
+        #pricing-options>div:first-child {
             border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-right: none;
         }
 
-        .right {
+        #pricing-options>div:last-child {
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
+            border-left: none;
         }
 
-        .lower-side button {
+        .pricing-option button {
             cursor: pointer;
-            /* margin-top: 40px; */
             color: white;
             border-radius: 8px;
             height: 50px;
@@ -90,9 +74,8 @@
             font-weight: bold;
             width: 100%;
             text-align: center;
-
-            background-color: hsl(228deg 29% 17%);
-
+            background-color: #1f2438;
+            border: none;
         }
 
         .header {
@@ -108,44 +91,37 @@
 
         hr {
             height: 2px;
-
             border: none;
-
             background-color: hsl(0deg 0% 97%);
         }
 
-
-        .tick {
-            margin: 25px 0px;
+        .feature {
+            margin: 20px 0px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
         }
 
-        #middle-price {
+        .feature svg {
+            height: 20px;
+            width: 20px;
+        }
+
+        .feature svg path {
+            stroke: #17d917;
+        }
+
+        #highlighted-price {
             box-shadow: 10px 20px 10px 20px hsl(228deg 19% 95%);
-            font-weight: bold;
-            background-color: hsl(228deg 29% 17%);
-            color: hsl(230deg 15% 76%);
-            border: 2px solid;
-            padding: 10px 20px;
-            font-size: 1rem;
+            background-color: #1f2438;
+            color: #b9bccb;
+            border: 4px solid #FFF;
             height: 400px;
             border-radius: 15px;
-            width: 50%;
-            border: none;
         }
 
-        #middle-price button {
-            cursor: pointer;
-
-            border-radius: 8px;
-            height: 50px;
-            font-size: 1.3rem;
-            background-color: hsl(234deg 81% 69%);
-            font-weight: bold;
-            width: 100%;
-            text-align: center;
-            /* margin-top: 40px; */
-            color: white;
-
+        #highlighted-price button {
+            background-color: #707df0;
         }
 
         #pop {
@@ -170,14 +146,14 @@
 </head>
 
 <body>
-    <section id="pricing">
-        <div id="upper">
-            <h1>Convinient Pricing</h1>
-            <p>Choose the right pricing for you and get started with your project.</p>
+    <section>
+        <div id="pricing-title">
+            <h1>Convenient Pricing</h1>
+            <p>Choose the right pricing for you and get started <br />with your project.</p>
         </div>
         <!-- lower  -->
-        <div id="lower">
-            <div class="lower-side left">
+        <div id="pricing-options">
+            <div class="pricing-option">
                 <div class="header" style="color: black;">Basic</div>
                 <div><span class="dollar" style="color: black;">
                         $29
@@ -196,7 +172,7 @@
                 </div>
                 <button>Get Started</button>
             </div>
-            <div id="middle-price">
+            <div id="highlighted-price" class="pricing-option">
                 <!-- second  -->
                 <div id="pop"><a href=""> Popular</a></div>
                 <div class="header" style="color: hsl(231deg 50% 62%);">Professional</div>
@@ -206,18 +182,40 @@
 
                 <p>The perfect way to get started and get used to our tools.</p>
                 <hr style="background-color: hsl(233deg 23% 22%);;" />
-                <div class="tick"><span><img src="img/tick (1).svg" alt="" height="15px" alt=""></span>
-                    All features in Standard
+                <div class="feature">
+                    <i>
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.89163 13.2687L9.16582 17.5427L18.7085 8" stroke="#000000" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+
+                    <span>All features in Standard</span>
                 </div>
-                <div class="tick"><span><img src="img/tick (1).svg" alt="" height="15px" alt=""></span>
-                    Over 600 components
+                <div class="feature"><i>
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.89163 13.2687L9.16582 17.5427L18.7085 8" stroke="#000000" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+
+                    <span>Over 600 components</span>
                 </div>
-                <div class="tick"><span><img src="img/tick (1).svg" alt="" height="15px" alt=""></span>
-                    Build tools and examples
+                <div class="feature"><i>
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.89163 13.2687L9.16582 17.5427L18.7085 8" stroke="#000000" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+
+                    <span>Build tools and examples</span>
                 </div>
                 <button>Get Started</button>
             </div>
-            <div class="lower-side right">
+            <div class="pricing-option">
                 <!-- thirde  -->
                 <div class="header" style="color: black;">Startup</div>
                 <div><span class="dollar" style="color: black;">
