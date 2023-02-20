@@ -1,0 +1,234 @@
+body {
+    background-color: hsl(0deg 0% 5%);
+    font-family: sans-serif;
+}
+
+section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: hsl(0deg 0% 100%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>div:last-child>div {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#nav-links>div div:nth-child(1) {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px;
+}
+
+.dash {
+    margin: 0 20px;
+    height: 2px;
+
+    width: 20px;
+    background-color: black;
+
+}
+
+h3 {
+
+    font-size: 2rem;
+    padding: 20px;
+
+}
+
+#personal-info-form {
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+h4 {
+    margin: 0;
+
+}
+
+#personal-info-form>div:first-child {
+    padding-top: 0;
+    font-size: 1.5rem;
+}
+
+.personal-info>div:last-child {
+    color: hsl(0deg 0% 50%);
+}
+
+
+::placeholder {
+    color: black;
+}
+
+#organization-input {
+    margin-top: 0;
+}
+
+#organization-input>div:last-child {
+    /* margin-left: 120px; */
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+#organization-input>div:last-child>div {
+    background-color: hsl(0deg 0% 97%);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+#organization-input>div:first-child {
+    background-color: #f3f3f3;
+    width: 600px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-left: 145px;
+}
+
+#organization-input>div:first-child input {
+    background-color: #f3f3f3;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+#organization-input>div:last-child select {
+    font-size: 1.5rem;
+    background-color: hsl(0deg 0% 97%);
+    border: none;
+    align-self: center;
+    height: 40px;
+    width: 70px;
+}
+
+#professional-info-form {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#professional-info-form>div:first-child {
+    padding-top: 0;
+    font-size: 1.5rem;
+}
+
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: hsl(0deg 0% 97%);
+    font-size: 1.5rem;
+    height: 40px;
+}
+
+
+
+.professional-option {
+    background-color: hsl(0deg 0% 97%);
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 600px;
+
+}
+
+label {
+    color: #aaaaaa;
+}
+
+select {
+    background-color: hsl(0deg 0% 97%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.professional-option select {
+    background-color: hsl(0deg 0% 97%);
+    border: none;
+    font-size: 1.5rem;
+    height: 40px;
+    width: 100%;
+}
+
+#submit-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#submit-btn>div:first-child {
+    font-size: 1rem;
+    color: hsl(0deg 0% 75%);
+}
+
+#Proficiency {
+    color: #aaaaaa;
+}
+
+#submit-btn>:nth-child(2) {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: hsl(0deg 0% 100%);
+    font-size: 1.5rem;
+    border-radius: 15px;
+    height: 60px;
+    width: 120px;
+    border: 1px solid #b3b2b2;
+}
+
+#submit-btn>:last-child {
+    cursor: pointer;
+    background-color: hsl(256deg 86% 54%);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    height: 60px;
+    width: 220px;
+    border: 1px solid;
+}

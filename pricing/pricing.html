@@ -6,143 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: #EEE;
-            font-family: sans-serif;
-            font-weight: normal;
-
-        }
-
-        section {
-            margin-top: 40px;
-        }
-
-        #pricing-title {
-            text-align: center;
-        }
-
-        #pricing-title h1 {
-            font-weight: bold;
-            font-size: 3rem;
-
-        }
-
-        #pricing-title p {
-            margin-top: 20px;
-            color: #979797;
-            font-size: 1.2rem;
-        }
-
-        #pricing-options {
-            margin: 80px 0px;
-            display: flex;
-            align-items: center;
-        }
-
-        .pricing-option {
-            color: #afafaf;
-            border: 0px solid;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border: 1px solid #e0e4ea;
-            width: 300px;
-            background-color: #FFF;
-        }
-
-        #pricing-options>div:first-child {
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-            border-right: none;
-        }
-
-        #pricing-options>div:last-child {
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            border-left: none;
-        }
-
-        .pricing-option button {
-            cursor: pointer;
-            color: white;
-            border-radius: 8px;
-            height: 50px;
-            font-size: 1.3rem;
-            font-weight: bold;
-            width: 100%;
-            text-align: center;
-            background-color: #1f2438;
-            border: none;
-        }
-
-        .header {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .dollar {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        hr {
-            height: 2px;
-            border: none;
-            background-color: hsl(0deg 0% 97%);
-        }
-
-        .feature {
-            margin: 20px 0px;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-
-        .feature svg {
-            height: 20px;
-            width: 20px;
-        }
-
-        .feature svg path {
-            stroke: #17d917;
-        }
-
-        #highlighted-price {
-            box-shadow: 10px 20px 10px 20px hsl(228deg 19% 95%);
-            background-color: #1f2438;
-            color: #b9bccb;
-            border: 4px solid #FFF;
-            height: 400px;
-            border-radius: 15px;
-        }
-
-        #highlighted-price button {
-            background-color: #707df0;
-        }
-
-        #pop {
-            display: flex;
-            justify-content: right;
-
-        }
-
-        #pop a {
-            padding: 5px 10px;
-            background-color: hsl(156deg 54% 57%);
-            color: white;
-            border-radius: 20px;
-            height: 20px;
-            width: 100px;
-            font-size: 1rem;
-            text-align: center;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -158,17 +22,35 @@
                 <div><span class="dollar" style="color: black;">
                         $29
                     </span><span> </span><span>/ </span><span>month</span></div>
-
                 <p>The perfect way to get started and get used to our tools.</p>
                 <hr />
-                <div class="tick"><span><img src="img/tick (1).svg" alt="" height="15px" style="color: green;"></span>
-                    All features in Standard
+                <div class="feature">
+                    <i>
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.89163 13.2687L9.16582 17.5427L18.7085 8" stroke="#000000" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+                    <span>All features in Standard</span>
                 </div>
-                <div class="tick"><span><img src="img/tick (1).svg" alt="" height="15px" alt=""></span>
-                    Over 600 components
+                <div class="feature"><i>
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.89163 13.2687L9.16582 17.5427L18.7085 8" stroke="#000000" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+                    <span>Over 600 components</span>
                 </div>
-                <div class="tick"><span><img src="img/tick (1).svg" alt="" height="15px" alt=""></span>
-                    Build tools and examples
+                <div class="feature"><i>
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.89163 13.2687L9.16582 17.5427L18.7085 8" stroke="#000000" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+                    <span>Build tools and examples</span>
                 </div>
                 <button>Get Started</button>
             </div>
@@ -221,24 +103,40 @@
                 <div><span class="dollar" style="color: black;">
                         $99
                     </span><span> </span><span>/ </span><span>month</span></div>
-
                 <p>The perfect way to get started and get used to our tools.</p>
                 <hr />
-                <div class="tick"><span><img src="img/tick (1).svg" alt="" height="15px" alt=""></span>
-                    All features in Standard
+                <div class="feature">
+                    <i>
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.89163 13.2687L9.16582 17.5427L18.7085 8" stroke="#000000" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+                    <span>All features in Standard</span>
                 </div>
-                <div class="tick"><span><img src="img/tick (1).svg" alt="" height="15px" alt=""></span>
-                    Over 600 components
+                <div class="feature"><i>
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.89163 13.2687L9.16582 17.5427L18.7085 8" stroke="#000000" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+                    <span>Over 600 components</span>
                 </div>
-                <div class="tick"><span><img src="img/tick (1).svg" alt="" height="15px" alt=""></span>
-                    Build tools and examples
+                <div class="feature"><i>
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.89163 13.2687L9.16582 17.5427L18.7085 8" stroke="#000000" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+                    <span>Build tools and examples</span>
                 </div>
                 <button>Get Started</button>
             </div>
         </div>
     </section>
-
-
 </body>
 
 </html>
