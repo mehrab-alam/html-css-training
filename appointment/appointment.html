@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: hsl(0deg 0% 5%);
+            font-family: sans-serif;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: hsl(0deg 0% 100%);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: normal;
+        }
+
+        nav {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav>div:first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav>div:last-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav>div:last-child>div {
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+
+        #nav-links>div div:nth-child(1) {
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px;
+        }
+
+        .dash {
+            margin: 0 20px;
+            height: 2px;
+
+            width: 20px;
+            background-color: black;
+
+        }
+
+        h3 {
+
+            font-size: 2rem;
+            padding: 20px;
+
+        }
+
+        #personal-info-form {
+            padding: 20px;
+
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+
+        h4 {
+            margin: 0;
+
+        }
+
+        #personal-info-form>div:first-child {
+            padding-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .personal-info>div:last-child {
+            color: hsl(0deg 0% 50%);
+        }
+
+
+        ::placeholder {
+            color: black;
+        }
+
+        #organization-input {
+            margin-top: 0;
+        }
+
+        #organization-input>div:last-child {
+            /* margin-left: 120px; */
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #organization-input>div:last-child>div {
+            background-color: hsl(0deg 0% 97%);
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+
+        #organization-input>div:first-child {
+            background-color: #f3f3f3;
+            width: 600px;
+            padding: 10px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            margin-left: 145px;
+        }
+
+        #organization-input>div:first-child input {
+            background-color: #f3f3f3;
+            border: none;
+            outline: none;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+
+
+        #organization-input>div:last-child select {
+            font-size: 1.5rem;
+            background-color: hsl(0deg 0% 97%);
+            border: none;
+            align-self: center;
+            height: 40px;
+            width: 70px;
+        }
+
+        #professional-info-form {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #professional-info-form>div:first-child {
+            padding-top: 0;
+            font-size: 1.5rem;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: hsl(0deg 0% 97%);
+            font-size: 1.5rem;
+            height: 40px;
+        }
+
+
+
+        .professional-option {
+            background-color: hsl(0deg 0% 97%);
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 15px;
+            width: 600px;
+
+        }
+
+        label {
+            color: #aaaaaa;
+        }
+
+        select {
+            background-color: hsl(0deg 0% 97%);
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .professional-option select {
+            background-color: hsl(0deg 0% 97%);
+            border: none;
+            font-size: 1.5rem;
+            height: 40px;
+            width: 100%;
+        }
+
+        #submit-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #submit-btn>div:first-child {
+            font-size: 1rem;
+            color: hsl(0deg 0% 75%);
+        }
+
+        #Proficiency {
+            color: #aaaaaa;
+        }
+
+        #submit-btn>:nth-child(2) {
+            cursor: pointer;
+            font-weight: bold;
+            background-color: hsl(0deg 0% 100%);
+            font-size: 1.5rem;
+            border-radius: 15px;
+            height: 60px;
+            width: 120px;
+            border: 1px solid #b3b2b2;
+        }
+
+        #submit-btn>:last-child {
+            cursor: pointer;
+            background-color: hsl(256deg 86% 54%);
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 15px;
+            height: 60px;
+            width: 220px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <!-- upper  -->
+        <nav>
+            <!-- left logo -->
+            <div id="torqbit-logo">
+                <a href=""><img src="img/torqbit-logo.png" alt=""></a>
+                <a href=""><img src="img/torqbit-name.png" alt=""></a>
+            </div>
+
+            <!-- right  -->
+            <div id="nav-links">
+                <!-- left link  -->
+                <div>
+                    <div style="background-color:hsl(256deg 86% 54%); color: white;">1</div>
+                    <a href="">About you</a>
+                </div>
+
+                <div class="dash"></div>
+
+                <!-- mid link -->
+                <div>
+                    <div style="background-color: #d9d9d9; color: white;">2</div>
+                    <a href="">Billing information</a>
+                </div>
+
+                <div class="dash"></div>
+
+                <!-- right-link  -->
+                <div>
+                    <div style="background-color: hsl(0deg 0% 85%); color: white;">3</div>
+                    <a href="">Get Started</a>
+                </div>
+
+            </div>
+
+        </nav>
+        <hr />
+        <!-- lower -->
+        <form action="">
+            <div>
+                <!-- up  -->
+
+                <div>
+                    <h3>About you</h3>
+
+                    <!-- low-first  -->
+                    <div id="personal-info-form">
+                        <!-- left  -->
+                        <div class="personal-info">
+                            <h4> Personal Info</h4>
+                            <div> provide your personal info</div>
+                        </div>
+                        <!-- right  -->
+                        <div id="organization-input">
+                            <!-- up  -->
+                            <div>
+                                <label for="organ">organization</label>
+                                <br />
+                                <input type="text" id="organ" placeholder="Torqbit">
+                            </div>
+                            <!-- low  -->
+                            <div>
+                                <div>
+
+                                    <label for="mr">Title</label>
+                                    <br />
+                                    <select name="" id="mr">
+                                        <option value="Mr.">Mr.</option>
+                                        <option value="Mrs.">Mrs.</option>
+                                    </select>
+
+
+                                </div>
+                                <div style="width: 250px;">
+                                    <label for="name">First Name*</label>
+                                    <br />
+                                    <input type="text" placeholder="Rahul" id="name">
+                                </div>
+                                <div style="width: 200px;">
+                                    <label for="last">Last Name*</label>
+                                    <br />
+                                    <input type="text" placeholder="Kumar" id="last">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr style="width: 100%;" />
+                <!-- low  -->
+                <div id="professional-info-form">
+
+                    <div class="personal-info">
+                        <h4>Professional Info</h4>
+                        <div>Provide your professional info</div>
+                    </div>
+                    <!-- right  -->
+                    <div>
+                        <div class="professional-option">
+                            <label for="lang">Languages(s)*</label>
+                            <br />
+                            <select name="" id="lang">
+                                <option value="Hindi,English">Hindi,English</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="English">English</option>
+                            </select>
+                        </div>
+                        <div class="professional-option">
+                            <label for="employe">Type of employment*</label>
+                            <br />
+                            <select name="" id="employe">
+                                <option value="Full Time Job">Full Time Job</option>
+                                <option value="Part Time Job">Part Time Job</option>
+                            </select>
+                        </div>
+                        <div class="professional-option">
+                            <label for="profess">Type of employment*</label>
+                            <br />
+
+                            <select name="" id="profess">
+                                <option value="Web Development">Web Development</option>
+                                <option value="Full Stack Developer">Full Stack Developer</option>
+                            </select>
+                        </div>
+                        <div class="professional-option" style="height: 60px;">
+                            <select name="" id="Proficiency">
+
+                                <option value="Proficiency level" selected>Proficiency
+                                    level</option>
+                                <option value="level 1">level 1</option>
+                                <option value="level 2">level 2</option>
+
+                            </select>
+                        </div>
+                        <!-- bottom  -->
+                        <div id="submit-btn">
+                            <div>*This field is mandatory</div>
+                            <button type="">Skip</button>
+                            <button type="submit">Save & Continue</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
