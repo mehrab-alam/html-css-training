@@ -10,1614 +10,21 @@
     metro_city("Dhanbad")
 
 </script>
+<link rel="stylesheet" href="style.css">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            margin: 0 auto;
-            font-family: sans-serif;
-            overflow-x: hidden;
-        }
 
-        #hero-section {
-            background-color: rgba(58, 10, 10, .6);
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        #whole-hearnic {
-            max-width: 1200px;
-            margin: 0 auto;
-
-        }
-
-        #background-image {
-
-            height: 100vh;
-            width: 100vw;
-            position: absolute;
-            object-fit: cover;
-            z-index: -10;
-        }
-
-
-        nav {
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        nav>div:first-child {
-            display: flex;
-            align-items: center;
-            margin-top: 0;
-            font-size: 1.5rem;
-            margin-right: 10px;
-        }
-
-        nav>div:last-child {
-            margin-right: 40px;
-        }
-
-        nav>div:last-child a {
-            align-items: center;
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            margin: 20px;
-
-        }
-
-        #home {
-            border-radius: 8px;
-            background-color: rgba(234, 223, 223, 0.39);
-            padding: 5px 15px;
-        }
-
-        #contact-num {
-            border-radius: 8px;
-            background-color: #E02350;
-            padding: 5px 10px;
-            box-shadow: 0 3px 0 3px rgba(0, 0, 0, 25%);
-        }
-
-        .main-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-        }
-
-        .header {
-            color: white;
-            padding: 35px 60px;
-            margin-bottom: 80px;
-        }
-
-        .header h3 {
-            font-size: 2.5rem;
-            font-weight: normal;
-        }
-
-        #whole-hearnic>div:last-child {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #facts-features {
-            color: white;
-            justify-content: flex-start;
-        }
-
-        #facts-features p {
-            font-size: 1.5rem;
-            color: #a29f9f;
-            margin: 40px 0;
-            margin-left: 60px;
-        }
-
-        #facts-features h4 {
-            margin-top: 80px;
-            font-size: 2.5rem;
-            margin-left: 60px;
-            font-weight: normal;
-        }
-
-        #user-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            margin-right: 40px;
-            border: 2px;
-            border-radius: 8px;
-            height: 400px;
-            width: 400px;
-            background-color: rgba(46, 34, 38, 80%);
-        }
-
-        #user-card>div:first-child {
-            color: hsl(0deg 0% 83%);
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-        }
-
-        #user-card>div:first-child p {
-            font-size: 1rem;
-        }
-
-        #user-card>div:first-child h5 {
-            margin-bottom: 0;
-            font-size: 1.5rem;
-        }
-
-        #image {
-            display: flex;
-
-        }
-
-        #user-card>div:first-child img {
-            height: 50px;
-            width: 50px;
-            border-radius: 100%;
-            border: 2px solid white;
-        }
-
-        .old-img {
-            margin-left: -15px;
-        }
-
-        #middle-usercard {
-            color: white;
-            padding: 35px 20px;
-            margin-top: 0;
-            font-size: 1.5rem;
-            color: #d4d4d4;
-            min-width: 300px;
-
-        }
-
-        #user-card>div:last-child {
-            color: #d4d4d4;
-            display: flex;
-            justify-content: space-between;
-            padding: 0px 20px;
-
-        }
-
-        #user-card>div:last-child button {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: black;
-            border-radius: 8px;
-            background-color: white;
-            padding: 10px 20px;
-            margin-bottom: 0;
-            text-align: center;
-        }
-
-
-        /* about  */
-
-        #section-about {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        #whole-about {
-            max-width: 1200px;
-            margin: 0 auto;
-            margin: 40px 20px;
-            display: flex;
-            justify-content: space-between;
-
-        }
-
-        .about-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .about-info h2 {
-            margin-top: 0;
-            font-size: 1.5rem;
-            width: 200px;
-            font-weight: bold;
-        }
-
-        #arrow-sign {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            height: 80px;
-            width: 80px;
-            border-radius: 50%;
-            border: 1px solid gray;
-            margin-bottom: 20px;
-            background-color: #fafafa;
-        }
-
-
-
-
-        #about-info-header h1 {
-            margin-top: 0;
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-
-        #about-info-header p {
-            font-size: 1.4rem;
-            color: gray;
-        }
-
-        #about-info-header>button {
-            padding: 5px 25px;
-            font-size: 1.2rem;
-            height: 40px;
-            width: 200px;
-            border-radius: 25px;
-            background-color: black;
-            color: white;
-        }
-
-        #section-about h3 {
-            margin-right: 40px;
-            font-size: 1.5rem;
-
-        }
-
-        #about-image {
-            margin-left: 20px;
-            height: 250px;
-            width: 400px;
-        }
-
-        #about-image img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        #about-features h1 {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        #about-features p {
-            font-size: 1.5rem;
-            color: gray;
-        }
-
-        #about-features>div {
-            margin-left: 20px;
-            justify-content: space-between;
-            display: flex;
-        }
-
-        /* gallery */
-
-        #section-gallery {
-
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        #whole-gallery {
-            margin: 80px 40px;
-        }
-
-        .gallery-header {
-            display: flex;
-            padding: 20px;
-            justify-content: space-between;
-            align-items: top;
-        }
-
-        .gallery-header>h2:first-child {
-            width: 200px;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        #gallery-header-feature>h1:first-child {
-            margin-top: 0;
-            font-weight: bold;
-            font-size: 2.5rem;
-            margin-left: 10px;
-        }
-
-        #gallery-header-feature>div:last-child {
-            font-weight: bold;
-            font-size: 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            width: 400px;
-            margin-top: 20px;
-        }
-
-        #gallery-header-feature>div:last-child>div {
-            text-align: center;
-            border: 1px solid #cac8c8;
-            border-radius: 15px;
-            padding: 5px 20px;
-            margin: 10px;
-            background-color: #f3f3f3;
-        }
-
-        .gallery-header>div:last-child {
-            display: flex;
-            justify-content: center;
-
-        }
-
-        .gallery-header>div:last-child a {
-            height: 60px;
-            width: 60px;
-            border: 1px solid #cac8c8;
-            border-radius: 50%;
-            padding: 5px;
-            margin: 5px;
-            text-align: center;
-
-        }
-
-        .gallery-header>div:last-child img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            border-radius: 50%;
-        }
-
-        /* lower  */
-        .drag-images {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px;
-        }
-
-        #therapy-border {
-            background-color: rgba(128, 128, 128, 0.327);
-            height: 750px;
-            width: 450px;
-            border: 1px solid #7A7878;
-            border-radius: 4px;
-            margin: 20px;
-        }
-
-        #therapy-border img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .therapy>div:last-child {
-            font-size: 1.8rem;
-            margin-top: 15px;
-            margin-left: 20px;
-        }
-
-        .therapy>div:last-child p {
-            margin-left: 65px;
-            margin-top: 10px;
-            font-size: 1.5rem;
-            color: #7A7878;
-        }
-
-        /* mid */
-        .drag-images h3 {
-            border: 2px solid;
-            height: 80px;
-            width: 80px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 20px;
-            background-color: black;
-            margin-bottom: 80px;
-            align-self: center;
-            color: white;
-            font-size: 2rem;
-        }
-
-        /* right  */
-        #equip-border {
-            height: 550px;
-            width: 450px;
-            border: 1px solid #7A7878;
-            border-radius: 4px;
-            align-self: flex-start;
-            background-color: rgba(128, 128, 128, 0.327);
-            margin: 20px;
-        }
-
-        #equip-border img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        /* services */
-
-        #section-service {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        #main-service {
-            display: flex;
-            /* justify-content: space-between; */
-            margin: 40px;
-        }
-
-        #main-serv {
-            min-width: 90%;
-            justify-self: right;
-            margin: 0 80px;
-        }
-
-        #service-head {
-            font-size: 1.5rem;
-            justify-self: center;
-            font-weight: bold;
-        }
-
-        #mid-services hr {
-            color: #d4d4d4;
-        }
-
-        #excellent {
-
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-top: 40px;
-            margin-bottom: 40px;
-            margin-left: 40px;
-            max-width: 450px;
-        }
-
-
-        .service-option div:nth-child(1) {
-            height: 30px;
-            width: 100px;
-            background-color: black;
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-            max-width: 450px;
-        }
-
-        .service-option {
-            margin-left: 28px;
-
-            display: flex;
-            font-size: 1.5rem;
-        }
-
-        .option {
-            background-color: #f3f3f3;
-            margin: 20px 0;
-            display: flex;
-            justify-content: center;
-            font-weight: bold;
-            border: 1px solid;
-            border-radius: 25px;
-            margin: 15px;
-            padding: 10px 20px;
-
-        }
-
-        /* .all {
-            height: 40px;
-            font-size: 0.8rem;
-            width: 150px;
-            background-color: black;
-            color: white;
-         
-            text-align: center;
-
-        } */
-        #mid-service hr {
-            max-width: 93%;
-            height: 2px;
-            background-color: #D4D4D4;
-            border: none;
-        }
-
-        .therapies {
-            display: flex;
-            justify-content: space-between;
-            padding: 30px 50px;
-        }
-
-        .therapies div:nth-child(1) {
-            font-size: 1.8rem;
-
-            font-weight: bold;
-        }
-
-        .sign {
-            justify-content: center;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: rgba(37, 37, 37, 0.799);
-            font-size: 4rem;
-            height: 70px;
-            width: 70px;
-            border: 1px solid #c8c8c8;
-            border-radius: 50%;
-        }
-
-        #low-service {
-            margin: 40px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #low-service button {
-            height: 60px;
-            width: 60px;
-            border-radius: 50%;
-        }
-
-        #low-service button>img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        #left-serv div:nth-child(1) {
-            font-size: 1.5rem;
-            color: #f3f3f3;
-            padding: 10px;
-        }
-
-
-        #lowerleft-serv {
-
-            font-size: 2.5rem;
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            padding: 30px;
-        }
-
-        #lowerleft-serv div:nth-child(1) {
-            font-size: 2.5rem;
-        }
-
-        #left-serv {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        #left-low-service {
-            display: flex;
-            justify-content: space-between;
-            margin-right: 20px;
-            height: 250px;
-            width: auto;
-            background-color: #594e51;
-        }
-
-        #low-right-service {
-            font-size: 1rem;
-
-            padding: 0 10px;
-            height: 250px;
-            width: 900px;
-            background-color: #f8f8f8;
-        }
-
-
-
-
-        #low-right-serv {
-            display: flex;
-            align-items: flex-start;
-            padding-left: 10px;
-        }
-
-        #low-right-serv div:nth-child(1) {
-            margin: 20px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 30px;
-            width: 30px;
-            border: 1px solid;
-            border-radius: 50%;
-        }
-
-        #low-right-serv img {
-            height: 30px;
-            width: 30px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        #low-right-serv p {
-            font-size: 1.2rem;
-            color: gray;
-        }
-
-        #right-serv {
-
-            display: flex;
-            justify-content: space-between;
-        }
-
-        /* doctor  */
-
-
-        #section-doctor {
-            max-width: 1200px;
-            margin: 0 auto;
-
-        }
-
-        #whole-doc {
-            margin: 20px;
-        }
-
-        #up-doc {
-            margin: 80px 40px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #up-doc p {
-            font-size: 1.5rem;
-            max-width: 600px;
-            color: #7A7878;
-        }
-
-        #middle-doc div:nth-child(1) {
-            width: 250px;
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-top: 60px;
-        }
-
-        #middle-doc div:nth-child(2) {
-            font-size: 2.5rem;
-            flex-wrap: wrap;
-            max-width: 700px;
-        }
-
-        #middle-doc {
-            display: flex;
-            justify-content: center;
-
-        }
-
-        #doc-circle {
-            background-color: #fafafa;
-            margin-top: 40px;
-            font-size: 1.5rem;
-            font-weight: bold;
-            height: 200px;
-            width: 200px;
-            border: 2px solid #c8c8c8;
-            text-align: center;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        #main-doc {
-            display: flex;
-            justify-content: right;
-
-        }
-
-        .doctor {
-
-            display: flex;
-            justify-content: center;
-            margin: 40px;
-        }
-
-        .upper-doc {
-
-
-            margin: 30px;
-            height: 400px;
-            width: 410px;
-            display: flex;
-            justify-content: center;
-            background-color: #fafafa;
-        }
-
-
-
-
-
-        .doctor img {
-            background-color: #fafafa;
-            border: 1px;
-
-        }
-
-
-
-        .doctor h1 {
-
-            font-size: 2rem;
-            margin-left: 40px;
-        }
-
-        .doctor p {
-            color: #7A7878;
-
-            font-size: 1.5rem;
-            margin-left: 40px;
-
-        }
-
-        .skill {
-
-            text-align: left;
-            margin-left: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 400px;
-        }
-
-        .skill>div {
-            font-weight: bold;
-            text-align: left;
-            border: 1px solid #c8c8c8;
-            background-color: #fafafa;
-            border-radius: 25px;
-            margin: 10px;
-            font-size: 1rem;
-            padding: 10px 20px;
-        }
-
-        /* reviews  */
-
-        #section-review {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        #whole-review {
-            margin: 20px;
-        }
-
-        #up-review {
-            display: flex;
-            justify-content: space-between;
-            margin: 40px;
-        }
-
-        #mid-reviews {
-            display: flex;
-        }
-
-        #mid-reviews div:nth-child(1) {
-            width: 250px;
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-top: 40px;
-        }
-
-        #mid-reviews div:nth-child(2) {
-            font-size: 2.2rem;
-            flex-wrap: wrap;
-            max-width: 700px;
-        }
-
-        #all-reviews {
-            background-color: #fafafa;
-            font-size: 1.2rem;
-            max-width: 400px;
-            height: 180px;
-            width: 180px;
-            border: 2px solid #c8c8c8;
-            text-align: bottom;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 50px;
-            font-weight: bold;
-        }
-
-        #up-review p {
-            max-width: 500px;
-            color: gray;
-            font-size: 1.8rem;
-        }
-
-
-        #low-review {
-            padding-left: 150px;
-            margin: 80px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #review-image {
-
-            border: 1px #c8c8c8;
-            border-radius: 50%;
-            height: 120px;
-            width: 120px;
-            /* margin: 0 150px; */
-        }
-
-        #review-image img {
-            height: 100%;
-            width: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            background-color: #bdb9b9;
-
-        }
-
-        #coma {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            background-color: #fafafa;
-            height: 50px;
-            width: 50px;
-            border: 1px solid #c8c8c8;
-            border-radius: 50%;
-        }
-
-        #coma img {
-            height: 70%;
-            width: 70%;
-            object-fit: cover;
-        }
-
-        #review-about div:nth-child(2) {
-
-            padding-top: 45px;
-            font-style: italic;
-            font-size: 2.2rem;
-            font-weight: normal;
-            flex-wrap: wrap;
-            max-width: 650px;
-        }
-
-        #review-about {
-            margin-top: 40px;
-
-            justify-self: right;
-        }
-
-        #review-about h1 {
-
-            padding: 10px;
-            margin-top: 40px;
-            font-size: 2rem;
-        }
-
-        #review-about p {
-            font-size: 1.5rem;
-            color: gray;
-            margin-left: 20px;
-        }
-
-        /* form  */
-
-        #section-form {
-
-            background-color: hsl(227deg 36% 35%);
-
-        }
-
-        #whole-form {
-
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        #logo-img {
-            align-self: flex-start;
-            margin-top: 30px;
-            margin-left: 40px;
-            width: 190px;
-        }
-
-        #header-form {
-            display: flex;
-            flex-direction: column;
-            margin: 0 50px;
-            justify-content: right;
-        }
-
-        #section-form h2 {
-            font-size: 1.5rem;
-            color: white;
-            padding: 20px;
-
-
-        }
-
-        #header-form h1 {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 40px;
-            font-size: 2.2rem;
-            flex-wrap: wrap;
-            max-width: 550px;
-
-
-        }
-
-        .upper-form {
-            /* justify-content: space-between; */
-            display: flex;
-        }
-
-
-        #left-upper-form {
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-
-
-        .input-field {
-            border-radius: 15px;
-            width: 400px;
-            height: 80px;
-            border: none;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .input-field input {
-            padding: 0px 5px;
-            height: 93%;
-            width: 70%;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            background-color: hsl(245deg 72% 20%);
-            font-size: 2rem;
-            color: white;
-        }
-
-        .input-field span {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            height: 74px;
-            width: 155px;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-            font-size: 32px;
-            background-color: hsl(245deg 72% 20%);
-
-
-        }
-
-        .input-field img {
-
-            height: 50px;
-            width: 90px;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-            background-color: hsl(245deg 72% 20%);
-
-        }
-
-        .input-low-field input {
-            padding: 0px 5px;
-            height: 80px;
-            width: 300px;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-            background-color: hsl(245deg 72% 20%);
-
-            font-size: 2rem;
-            color: white;
-        }
-
-        .input-low-field {
-
-            width: 250px;
-            height: 80px;
-            border-radius: 15px;
-
-            border: none;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .input-low-field button {
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            margin-left: -9px;
-            color: white;
-            background-color: hsl(245deg 72% 20%);
-
-            font-size: 40px;
-            height: 80px;
-            width: 80px;
-
-            border: none;
-
-        }
-
-        .input-low-field span {
-            color: white;
-            padding-left: 10px;
-            width: 60px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            font-size: 42px;
-
-
-        }
-
-        .date-input span {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 10px;
-            height: 60px;
-            width: 150px;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-            font-size: 2rem;
-            background-color: hsl(245deg 72% 20%);
-
-        }
-
-        .date-input {
-            border-radius: 15px;
-            height: 100px;
-
-            padding: 20px;
-            border: none;
-            display: flex;
-            /* justify-content: center; */
-            margin-top: 100px;
-            border: none;
-
-        }
-
-        .date-input input {
-            height: 80px;
-            width: 670px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            background-color: hsl(245deg 72% 20%);
-
-            font-size: 2rem;
-            color: white;
-
-        }
-
-        .submit-button {
-            margin: 40px 25px;
-
-            height: 70px;
-            width: 400px;
-            border-radius: 15px;
-            background-color: hsl(245deg 72% 20%);
-
-            font-size: 2rem;
-            color: white;
-            text-align: center;
-            border: none;
-        }
-
-        /* question  */
-
-        #section-question {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        #whole-que {
-            margin: 40px 60px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #faq {
-            width: 200px;
-            font-weight: bold;
-            margin-top: 20px;
-            font-size: 1.5rem;
-
-        }
-
-        #up-question {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            font-weight: bold;
-
-
-        }
-
-        .question {
-
-            margin: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-
-
-        #mid-question hr {
-            height: 3px;
-            background-color: #D4D4D4;
-            border: none;
-        }
-
-        #up-question h1 {
-            font-size: 3rem;
-            flex-wrap: wrap;
-            max-width: 500px;
-            margin-left: 20px;
-
-        }
-
-        .para-ques {
-            font-size: 1.5rem;
-        }
-
-        /* partner  */
-
-        #section-partner {
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-
-        #whole-partner {
-            margin: 40px;
-        }
-
-        #up-partner {
-            margin: 20px;
-
-
-            font-weight: bold;
-            display: flex;
-
-        }
-
-        #up-partner div:nth-child(1) {
-            font-size: 1.5rem;
-            width: 220px;
-        }
-
-        #section-partner h1 {
-            font-size: 3rem;
-            flex-wrap: wrap;
-            max-width: 400px;
-
-        }
-
-        #partner-image {
-            display: flex;
-            justify-content: space-between;
-            /* margin-left: -5%; */
-
-        }
-
-        #partner-image>div {
-            /* text-align: center; */
-            margin: 0 20px;
-            height: 150px;
-            width: 150px;
-            border: 2px solid #c8c8c8;
-            border-radius: 50%;
-            padding: 10px;
-            background-color: #fafafa;
-        }
-
-        #partner-image img {
-            border-radius: 50%;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            /* border-radius: 50%; */
-        }
-
-        /* blog */
-
-
-
-        #section-blog {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        #whole-blog {
-            margin: 150px 60px;
-
-        }
-
-        #bolg-main-head {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #up-blog {
-            font-size: 1.5rem;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #blog-header h1 {
-            font-size: 3rem;
-            flex-wrap: wrap;
-            max-width: 550px;
-            /* margin-right: 40px; */
-        }
-
-        #blog {
-            font-size: 2rem;
-            width: 220px;
-        }
-
-        .blog-arrow {
-
-            background-color: #fafafa;
-            margin: 5px;
-            font-size: 3rem;
-            border: 2px solid #c8c8c8;
-            border-radius: 50%;
-            height: 80px;
-            width: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        #blog-sign {
-            display: flex;
-            justify-content: center;
-
-
-        }
-
-        #blog-image {
-
-            margin-top: 30px;
-            display: flex;
-            justify-content: right;
-        }
-
-        .blog-option {
-
-            margin: 20px 0px;
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 400px;
-
-        }
-
-        .blog-option>div {
-            font-weight: bold;
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            text-align: center;
-            border: 1px solid #c8c8c8;
-            border-radius: 20px;
-            background-color: #fafafa;
-
-        }
-
-        #blog-image h1 {
-            font-weight: bold;
-            margin-left: 10px;
-            font-size: 1.5rem;
-            max-width: 400px;
-        }
-
-        #blog-image img {
-
-
-            border: 1px;
-            background-color: wheat;
-        }
-
-        #second-img img {
-            width: 440px;
-            /* margin-right: 50px; */
-        }
-
-        #first-img img {
-            width: 400px;
-
-            /* padding-left: 250px; */
-        }
-
-        /* contact  */
-
-        #section-contact {
-
-            background-color: hsl(227deg 36% 35%);
-
-        }
-
-        #whole-contact {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 40px;
-
-        }
-
-        #nav-logo {
-
-            align-items: center;
-            display: flex;
-        }
-
-        #nav-left {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3.5rem;
-            color: white;
-            background-color: hsl(245deg 72% 20%);
-            height: 80px;
-            width: 80px;
-            border: 1px solid;
-            border-radius: 50%;
-            margin-right: 40px;
-        }
-
-        #heading {
-
-            margin-left: 40px;
-            font-size: 2.5rem;
-            color: white;
-        }
-
-        #contact-form {
-            margin: 80px 40px;
-            display: flex;
-            /* justify-content: center; */
-        }
-
-        #contact-form-detail {
-
-            column-gap: 80px;
-            row-gap: 45px;
-            text-align: center;
-
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        }
-
-        .input-detail {
-            display: flex;
-            align-items: center;
-            border-radius: 15px;
-            height: 70px;
-            width: 500px;
-            background-color: hsl(245deg 72% 20%);
-
-
-        }
-
-        .input-select {
-            display: flex;
-            align-items: center;
-            border-radius: 15px;
-            height: 70px;
-            width: 500px;
-            background-color: hsl(245deg 72% 20%);
-
-
-        }
-
-        .input-select input {
-            border: none;
-            outline: none;
-            height: 45px;
-            width: 88%;
-            background-color: hsl(245deg 72% 20%);
-            border: none;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-            font-size: 20px;
-            padding: 0 15px;
-            border: none;
-            color: white;
-
-        }
-
-        .input-detail input {
-            height: 45px;
-            width: 88%;
-            background-color: hsl(245deg 72% 20%);
-            border: none;
-            outline: none;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            font-size: 24px;
-            padding: 0 10px;
-            border: none;
-            color: white;
-        }
-
-        .input-detail img {
-            padding: 5px 8px;
-            height: 50px;
-            width: 50px;
-        }
-
-        .plus {
-            font-weight: bold;
-            font-size: 42px;
-            padding: 5px 15px;
-            color: white;
-            background-color: hsl(245deg 72% 20%);
-
-            border: none;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-        }
-
-        #number {
-            font-size: 24px;
-            padding: 5px 15px;
-            color: white;
-        }
-
-        #contact-submit {
-            border-radius: 15px;
-            height: 60px;
-            width: 300px;
-            background-color: hsl(245deg 72% 20%);
-            border: none;
-            font-size: 2rem;
-            color: white;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        ::placeholder {
-            font-size: 1.5rem;
-        }
-
-
-        #contact-site {
-            margin-left: 40px;
-            margin-right: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-
-        }
-
-        #contact-site h1 {
-            font-size: 2.5rem;
-        }
-
-        #contact-site p {
-            font-size: 1.5rem;
-
-        }
-
-        #all-site {
-            font-size: 1.5rem;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            row-gap: 10px;
-            column-gap: 25px;
-        }
-
-        #all-site a {
-            color: white;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .lower-site {
-            display: flex;
-            justify-content: right;
-            margin-bottom: 80px;
-        }
-
-
-        .lower-site>div {
-            height: 70px;
-            width: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px;
-
-            border: 1px solid;
-            border-radius: 50%;
-            background-color: #f3f3f3;
-        }
-
-
-
-        .lower-site img {
-
-            height: 100%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            border-radius: 50%;
-            object-fit: cover;
-
-        }
-
-        .lower-p {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-
-
-        button {
-            cursor: pointer;
-        }
-
-        input {
-            border: none;
-            outline: none;
-        }
-
-        a {
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body>
     <!-- hero-sectin  -->
     <section id="hero-section">
-        <img id="background-image" src="img/hearnic-background.jpeg" alt="">
-        <div id="whole-hearnic">
+        <img src="img/hearnic-background.jpeg" alt="">
+        <div id="hero-container">
             <nav>
                 <div>
                     <img src="img/ear_1.png" alt="" height="60px" width="auto">
@@ -1633,7 +40,7 @@
                 </div>
             </nav>
             <!-- main container -->
-            <div class="header">
+            <div class="hero-header">
                 <!-- top  -->
                 <h3>Over past decade,
                     we have <br> provided hundreds of hearing <br>
@@ -1671,9 +78,7 @@
                     <!-- lower -->
                     <div>
                         <div style="font-size: 2.5rem;">20%</div>
-                        <button>Make
-                            an
-                            appointment</button>
+                        <button>Make an appointment</button>
                     </div>
                 </div>
             </div>
@@ -1683,7 +88,7 @@
     <!-- about-us  -->
 
     <section id="section-about">
-        <div id="whole-about">
+        <div id="about-section-container">
             <!-- up -->
             <div class="about-info">
                 <h2>About Us</h2>
@@ -1824,28 +229,22 @@
 
     <section id="section-service">
         <div id="whole-service">
-            <div id="main-service">
-                <div id="service-head">Service</div>
-                <div id="main-serv">
+            <div id="service-header">
+                <h2>Service</h2>
+                <div>
+                    <h3>Excellent services of <br> our clinic</h3>
+                    <div class="service-option">
+                        <div>All</div>
+                        <div>For adults</div>
+                        <div>For children</div>
 
-                    <div id="about-service">
-                        <div id="excellent">Excellent services of our clinic</div>
-                        <div class="service-option">
-                            <div class="option">All</div>
-                            <div class="option">For adults</div>
-                            <div class="option">For children</div>
 
-                        </div>
                     </div>
-
-
                     <!-- therapy  -->
-
-
-                    <div id="mid-service">
+                    <div class="service-facilities">
                         <div class="therapies">
                             <div>Diagonistic examination with consultation of an audiologist</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
                         <div class="therapies">
@@ -1856,75 +255,70 @@
 
                         <div class="therapies">
                             <div>consultation with a specialized therapist</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
 
                         <div class="therapies">
                             <div>consultation with a audiologist specialist</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
 
                         <div class="therapies">
                             <div>Therapy for speech and hearing problem</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
 
                         <div class="therapies">
                             <div>Hearing problem resolution</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
 
                         <div class="therapies">
                             <div>Treatment of Presbyterians</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
 
                         <div class="therapies">
                             <div>Therapy Treatment of dysarthia</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
 
                         <div class="therapies">
                             <div>Therapy treatment of high level Amyotrophic lateral sclerosis</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
 
                         <div class="therapies">
                             <div>Treatment for sensorineual</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
 
                         <div class="therapies">
                             <div>Outpatient course of conservation treatment</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
 
                         <div class="therapies">
                             <div>Hardware treatment(stuttering, apraxia, ANSD, sensorineual)</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
 
                         <div class="therapies">
                             <div>Therapy and Aid</div>
-                            <div class="sign"><button class="sign">+</button></div>
+                            <button class="sign">+</button>
                         </div>
                         <hr />
-
-
                     </div>
-
-
-
                 </div>
 
             </div>
@@ -1932,71 +326,68 @@
 
             <!-- lower  -->
 
-            <div id="low-service">
+            <div id="service-offer">
                 <!-- left  -->
-                <div id="left-low-service">
-                    <div id="left-serv">
-                        <div style="padding: 30px;">Take a discount for a child under 5 years of age, for the first
-                            examination</div>
-                        <div id="lowerleft-serv">
-                            <div>50%</div>
-                            <div><button><img src="img/phone.jpg" alt=""></button> </div>
-                        </div>
+                <div class="service-discount">
+
+                    <p style="padding: 30px;">Take a discount for a child under 5 years of age, for the first
+                        examination</p>
+                    <div>
+                        <div>50%</div>
+                        <button><img src="img/phone.jpg" alt=""></button>
                     </div>
+
                 </div>
 
                 <!-- right  -->
-                <div id="low-right-service">
-                    <div id="right-serv">
-                        <div> <img src="img/doc-arti.png" alt="" height="250px"></div>
-                        <div id="low-right-serv">
-                            <div><img src="img/coma.png" alt=""></div>
-                            <div>
-                                <h1>"Stand up to the sick you world have them stand up to you in the hour of illness.
-                                </h1>
-                                <p>Dr. Arti Sukhla</p>
-                            </div>
+                <div id="service-comment">
+
+                    <img src="img/doc-arti.png" alt="" height="250px">
+                    <div>
+                        <img src="img/coma.png" alt="">
+                        <div>
+                            <h4>"Stand up to the sick you <br> world have them stand up <br> to you in the hour of
+                                <br> illness.
+                            </h4>
+                            <p>Dr. Arti Sukhla</p>
                         </div>
                     </div>
-
                 </div>
+
             </div>
+        </div>
 
         </div>
     </section>
 
-
     <!-- doctors  -->
     <section id="section-doctor">
 
-        <div id="whole-doc">
+        <div id="doc-container">
             <!-- upper  -->
-            <div id="up-doc">
-                <!-- left  -->
-
+            <div id="doctor-header">
                 <!-- mid  -->
-                <div id="middle-doc">
-                    <div>Doctors</div>
+                <div>
+                    <h2>Doctors</h2>
                     <div>
-                        <h1>Aid specialists and Audiologists</h1>
-                        <p>Our clinic employs only Professionals specialist and audiologist.We select
-                            the best doctors on a
-                            regular basis.</p>
+                        <h1>Aid specialists and <br> Audiologists</h1>
+                        <p>Our clinic employs only Professionals specialist <br> and audiologist.We select the best
+                            doctors on a <br>regular basis.</p>
                     </div>
                 </div>
                 <!-- right  -->
                 <div id="doc-circle">All Doctors &rarr;</div>
             </div>
             <!-- lower  -->
-            <div id="main-doc">
+            <div id="about-doctor">
                 <div>
 
                     <!-- up -->
                     <div class="doctor">
                         <!-- left  -->
                         <div>
-                            <div class="upper-doc"><img src="img/shyam.png" alt=""></div>
-                            <div class="doc-about">
+                            <img src="img/shyam.png" alt="">
+                            <div>
                                 <h1>Dr. Shyam Khurana</h1>
                                 <p>Work Experience- 8 Years</p>
                                 <div class="skill">
@@ -2008,8 +399,8 @@
                         </div>
                         <!-- right -->
                         <div>
-                            <div class="upper-doc"><img src="img/girl-doc.png" alt=""></div>
-                            <div class="doc-about">
+                            <img src="img/girl-doc.png" alt="">
+                            <div>
                                 <h1>Dr. Arti Shukhla</h1>
                                 <p>Work Experience- 14 Years</p>
                                 <div class="skill">
@@ -2026,8 +417,8 @@
                     <div class="doctor">
                         <!-- left  -->
                         <div>
-                            <div class="upper-doc"><img src="img/nikjil.png" alt=""></div>
-                            <div class="doc-about">
+                            <img src="img/nikjil.png" alt="">
+                            <div>
                                 <h1>Dr. Nikhil Nanda</h1>
                                 <p>Work Experience- 10 Years</p>
                                 <div class="skill">
@@ -2039,8 +430,8 @@
                         </div>
                         <!-- right -->
                         <div>
-                            <div class="upper-doc"><img src="img/doc4.jpg" alt=""></div>
-                            <div class="doc-about">
+                            <img src="img/doc4.jpg" alt="">
+                            <div>
                                 <h1>Dr. Rani Kohli</h1>
                                 <p>Work Experience- 2 Years</p>
                                 <div class="skill">
@@ -2057,8 +448,8 @@
                     <div class="doctor">
                         <!-- left  -->
                         <div>
-                            <div class="upper-doc"><img src="img/doc5.jpg" alt=""></div>
-                            <div class="doc-about">
+                            <img src="img/doc5.jpg" alt="">
+                            <div>
                                 <h1>Dr. Radhika Sharma</h1>
                                 <p>Work Experience- 3 Years</p>
                                 <div class="skill">
@@ -2070,8 +461,8 @@
                         </div>
                         <!-- right -->
                         <div>
-                            <div class="upper-doc"><img src="img/doc6.jpg" alt=""></div>
-                            <div class="doc-about">
+                            <img src="img/doc6.jpg" alt="">
+                            <div>
                                 <h1>Dr. Rashmi Thakur</h1>
                                 <p>Work Experience- 3 Years</p>
                                 <div class="skill">
